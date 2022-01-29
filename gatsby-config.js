@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Liza Épil et Ongles`,
+    titleTemplate: "%s - Service de soins d'esthétique",
+    description: `Centre de soins d'esthétique. Manicure, pédicure et épilation à Lavaltrie, Québec.`,
+    author: `Nicholas Bérubé`,
+    url: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
