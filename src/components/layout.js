@@ -8,11 +8,14 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link, useTranslation, useI18next } from "gatsby-plugin-react-i18next"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  const { t } = useTranslation("layout")
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -39,9 +42,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, {t("footer")}
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.com">Gatsby</a>, Nicholas Bérubé
         </footer>
       </div>
     </>
