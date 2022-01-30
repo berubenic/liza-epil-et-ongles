@@ -6,31 +6,28 @@ const Header = ({ siteTitle }) => {
   const { languages, originalPath } = useI18next()
   const { t } = useTranslation("header")
   return (
-    <header
-      style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-      }}
-    >
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
+    <header>
+      <div>
+        <h1>
+          <Link to="/">{siteTitle}</Link>
         </h1>
-        <h2>{t("description")}</h2>
+        <ul>
+          <li>
+            <Link to="/">{t("home")}</Link>
+          </li>
+          <li>
+            <Link to="#">{t("services")}</Link>
+          </li>
+          <li>
+            <Link to="#">{t("gallery")}</Link>
+          </li>
+          <li>
+            <Link to="#">{t("blog")}</Link>
+          </li>
+          <li>
+            <Link to="#">{t("contact")}</Link>
+          </li>
+        </ul>
         <ul className="languages">
           {languages.map(lng => (
             <li key={lng}>
