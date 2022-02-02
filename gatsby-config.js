@@ -67,6 +67,17 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-fresnel`,
+      options: {
+        breakpoints: {
+          sm: 0,
+          md: 768,
+          lg: 1024,
+          xl: 1192,
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
