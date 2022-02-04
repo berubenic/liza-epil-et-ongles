@@ -4,7 +4,7 @@ import * as style from "./header.module.css"
 
 const DesktopNav = () => {
   const { languages, originalPath } = useI18next()
-  const { t } = useTranslation("header")
+  const { t } = useTranslation("nav")
   return (
     <nav className={style.nav}>
       <ul className={style.navList}>

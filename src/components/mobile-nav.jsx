@@ -5,7 +5,7 @@ import * as style from "./header.module.css"
 
 const MobileNav = ({ pageWrapId, outerContainerId }) => {
   const { languages, originalPath } = useI18next()
-  const { t } = useTranslation("header")
+  const { t } = useTranslation("nav")
   return (
     <Menu
       pageWrapId={pageWrapId}
