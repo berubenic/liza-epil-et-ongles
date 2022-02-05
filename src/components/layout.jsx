@@ -7,7 +7,6 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import Header from "./header"
@@ -15,24 +14,10 @@ import Header from "./header"
 const Layout = ({ children }) => {
   const { t } = useTranslation("layout")
 
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div id="outer-container">
-        <Header
-          siteTitle={data.site.siteMetadata?.title || `Title`}
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-container"}
-        />
+        <Header />
         <main id="page-wrap">{children}</main>
         <footer>
           © {new Date().getFullYear()}, {t("footer")}

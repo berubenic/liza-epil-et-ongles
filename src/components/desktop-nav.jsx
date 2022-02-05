@@ -11,18 +11,6 @@ const DesktopNav = () => {
         <li>
           <Link to="/">{t("home")}</Link>
         </li>
-        <li>
-          <Link to="#">{t("services")}</Link>
-        </li>
-        <li>
-          <Link to="#">{t("gallery")}</Link>
-        </li>
-        <li>
-          <Link to="#">{t("blog")}</Link>
-        </li>
-        <li>
-          <Link to="#">{t("contact")}</Link>
-        </li>
       </ul>
       <ul className={style.languages}>
         {languages.map(lng => (

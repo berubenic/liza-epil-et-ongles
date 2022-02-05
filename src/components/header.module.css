@@ -1,31 +1,15 @@
+.company-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+  padding-right: 1rem;
+}
+
 .company-name {
-  text-align: center;
-}
-
-.company-name > * {
   text-decoration: none;
-  color: var(--dark-purple);
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-.nav-list > * {
-  margin: 1rem;
-}
-
-.languages {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+  font-family: "satisfy";
+  color: black;
+  font-size: 1.875rem;
 }
