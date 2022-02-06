@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { StaticImage } from "gatsby-plugin-image"
+import logo from "../images/logo.svg"
 import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 import * as style from "./header.module.css"
 import MobileNav from "./mobile-nav"
@@ -12,12 +12,7 @@ const Header = () => {
   return (
     <header>
       <div className={style.companyContainer}>
-        <StaticImage
-          src="../images/logo.jpg"
-          width={65.73}
-          alt={t("logo-alt")}
-          style={{ margin: `1rem` }}
-        />
+        <img src={logo} alt={t("logo-alt")} className={style.companyLogo} />
         <h1>
           <Link to="/" className={style.companyName}>
             Épil et Ongles

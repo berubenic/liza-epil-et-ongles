@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link, useTranslation, useI18next } from "gatsby-plugin-react-i18next"
 import * as style from "./mobile-nav.module.css"
 
-const MobileNav = ({ pageWrapId, outerContainerId }) => {
+const MobileNav = () => {
   const { languages, originalPath } = useI18next()
   const { t } = useTranslation("nav")
   return (
@@ -18,6 +18,8 @@ const MobileNav = ({ pageWrapId, outerContainerId }) => {
       </ul>
       <a
         href="https://www.facebook.com/liza.epil.et.ongles/"
+        target="_blank"
+        rel="noreferrer"
         className={style.bookingButton}
       >
         {t("book")}
