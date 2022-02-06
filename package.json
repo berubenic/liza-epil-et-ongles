@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/montserrat": "^4.5.4",
     "@fontsource/roboto": "^4.5.3",
     "@fontsource/satisfy": "^4.5.1",
     "gatsby": "^4.5.4",

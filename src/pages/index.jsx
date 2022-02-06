@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
+import * as style from "./index.module.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
@@ -11,8 +12,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title={t("title")} />
-      <h1>{t("greeting")}</h1>
-      <p>{t("description")}</p>
+      <div className={style.introMobileContainer}>
+        <h1>{t("greeting")}</h1>
+        <p>{t("description")}</p>
+      </div>
     </Layout>
   )
 }
