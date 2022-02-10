@@ -1,5 +1,4 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import {
@@ -14,7 +13,7 @@ const ServiceBanner = ({ title, imageToGet }) => {
   const { t } = useTranslation("service")
   return (
     <div className={serviceBannerContainer}>
-      <GatsbyImage image={image} className={serviceImage} />
+      <GatsbyImage image={image} className={serviceImage} alt="" />
       <h2 className={serviceTitle}>{t(`${title}`)}</h2>
       <p className={serviceDescription}>{t(`${title}-description`)}</p>
     </div>
