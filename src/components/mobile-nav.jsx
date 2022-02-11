@@ -1,10 +1,10 @@
 import * as React from "react"
-import { Link, useTranslation, useI18next } from "gatsby-plugin-react-i18next"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import * as style from "./mobile-nav.module.css"
+import BookingButton from "./booking-button"
 
 const MobileNav = () => {
   const { languages, originalPath } = useI18next()
-  const { t } = useTranslation("nav")
   return (
     <nav className={style.nav}>
       <ul className={style.languages}>
@@ -16,14 +16,7 @@ const MobileNav = () => {
           </li>
         ))}
       </ul>
-      <a
-        href="https://www.facebook.com/liza.epil.et.ongles/"
-        target="_blank"
-        rel="noreferrer"
-        className={style.bookingButton}
-      >
-        {t("book")}
-      </a>
+      <BookingButton></BookingButton>
     </nav>
   )
 }

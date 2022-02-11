@@ -7,6 +7,7 @@ import {
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ServiceBanner from "../components/service-banner"
+import ContactBanner from "../components/contact-banner"
 import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
@@ -30,6 +31,9 @@ const IndexPage = ({ data }) => {
           title="manicure"
           imageToGet={data.manicureServiceImage}
         />
+      </div>
+      <div>
+        <ContactBanner></ContactBanner>
       </div>
     </Layout>
   )
