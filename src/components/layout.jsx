@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const { t } = useTranslation("layout")
@@ -19,11 +20,7 @@ const Layout = ({ children }) => {
       <div id="outer-container">
         <Header />
         <main id="page-wrap">{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, {t("footer")}
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>, Nicholas Bérubé
-        </footer>
+        <Footer></Footer>
       </div>
     </>
   )

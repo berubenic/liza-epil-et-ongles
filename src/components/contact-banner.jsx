@@ -31,7 +31,7 @@ const ContactBanner = () => {
           rel="noreferrer"
         >
           <StaticImage
-            src="../images/f_logo_RGB-Blue_72.png"
+            src="../images/f_logo_RGB-Blue_100.png"
             alt="Facebook brand logo"
             width={logoWidth}
           />
