@@ -9,6 +9,7 @@ import Seo from "../components/seo"
 import ServiceBanner from "../components/service-banner"
 import ContactBanner from "../components/contact-banner"
 import { graphql } from "gatsby"
+import ConstructionBanner from "../components/construction-banner"
 
 const IndexPage = ({ data }) => {
   const { t } = useTranslation("index")
@@ -34,6 +35,9 @@ const IndexPage = ({ data }) => {
       </div>
       <div>
         <ContactBanner></ContactBanner>
+      </div>
+      <div>
+        <ConstructionBanner></ConstructionBanner>
       </div>
     </Layout>
   )
