@@ -1,15 +1,14 @@
 import * as React from "react"
-import { Link, useI18next, useTranslation } from "gatsby-plugin-react-i18next"
+import { Link, useTranslation, useI18next } from "gatsby-plugin-react-i18next"
 import {
   nav,
-  languageList,
   languageLink,
   navLinkList,
   navLink,
-} from "./mobile-nav.module.css"
+} from "./nav-desktop.module.css"
 import BookingButton from "./booking-button"
 
-const MobileNav = () => {
+const NavDesktop = () => {
   const { languages, originalPath } = useI18next()
   const { t } = useTranslation("nav")
 
@@ -22,7 +21,8 @@ const MobileNav = () => {
           </Link>
         </li>
       </ul>
-      <ul className={languageList}>
+      <BookingButton></BookingButton>
+      <ul>
         {languages.map(lng => (
           <li key={lng}>
             <Link to={originalPath} language={lng} className={languageLink}>
@@ -31,9 +31,8 @@ const MobileNav = () => {
           </li>
         ))}
       </ul>
-      <BookingButton></BookingButton>
     </nav>
   )
 }
 
-export default MobileNav
+export default NavDesktop

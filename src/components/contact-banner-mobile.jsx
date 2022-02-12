@@ -9,9 +9,9 @@ import {
   contactName,
   contactTitle,
   socialLogoContainer,
-} from "./contact-banner.module.css"
+} from "./contact-banner-mobile.module.css"
 
-const ContactBanner = () => {
+const ContactBannerMobile = () => {
   const { t } = useTranslation("contact")
   const logoWidth = 60
   return (
@@ -22,7 +22,11 @@ const ContactBanner = () => {
         <p className={contactTitle}>{t("nail technician")}</p>
         <p className={contactTitle}>{t("hair removal specialist")}</p>
       </div>
-      <StaticImage src="../images/liza-profile.jpg" className={profileImage} />
+      <StaticImage
+        src="../images/liza-profile.jpg"
+        className={profileImage}
+        width={120}
+      />
 
       <div className={socialLogoContainer}>
         <a
@@ -62,4 +66,4 @@ const ContactBanner = () => {
   )
 }
 
-export default ContactBanner
+export default ContactBannerMobile

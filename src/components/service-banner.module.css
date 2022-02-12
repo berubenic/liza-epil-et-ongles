@@ -5,6 +5,7 @@
   text-align: center;
   width: 68%;
   margin: 2rem auto;
+  margin-bottom: 6rem;
   font-family: "Montserrat";
 }
 
@@ -23,4 +24,14 @@
 
 .service-description {
   line-height: 1.7rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .service-banner-container {
+    width: 15%;
+  }
+
+  .serviceTitle {
+    white-space: nowrap;
+  }
 }

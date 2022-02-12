@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
+import { Media } from "gatsby-plugin-fresnel"
 import {
   introMobileContainer,
   serviceBannerContainer,
@@ -7,7 +8,8 @@ import {
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ServiceBanner from "../components/service-banner"
-import ContactBanner from "../components/contact-banner"
+import ContactBannerMobile from "../components/contact-banner-mobile"
+import ContactBannerDesktop from "../components/contact-banner-desktop"
 import { graphql } from "gatsby"
 import ConstructionBanner from "../components/construction-banner"
 
@@ -33,9 +35,14 @@ const IndexPage = ({ data }) => {
           imageToGet={data.manicureServiceImage}
         />
       </div>
-      <div>
-        <ContactBanner></ContactBanner>
-      </div>
+      <Media lessThan="lg">
+        <div>
+          <ContactBannerMobile></ContactBannerMobile>
+        </div>
+      </Media>
+      <Media greaterThanOrEqual="lg">
+        <ContactBannerDesktop></ContactBannerDesktop>
+      </Media>
       <div>
         <ConstructionBanner></ConstructionBanner>
       </div>

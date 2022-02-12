@@ -11,3 +11,19 @@
 .service-banner-container {
   margin: 2rem auto;
 }
+
+@media only screen and (min-width: 1024px) {
+  .intro-mobile-container {
+    text-align: left;
+    width: 100%;
+    margin-left: 6%;
+    font-size: 2.5rem;
+    line-height: 175%;
+  }
+
+  .service-banner-container {
+    display: flex;
+    width: 92%;
+    margin: 5rem auto;
+  }
+}

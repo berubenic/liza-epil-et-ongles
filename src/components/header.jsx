@@ -9,8 +9,8 @@ import {
   companyLogo,
   navContainer,
 } from "./header.module.css"
-import MobileNav from "./mobile-nav"
-import DesktopNav from "./desktop-nav"
+import NavMobile from "./nav-mobile"
+import NavDesktop from "./nav-desktop"
 import { Media } from "gatsby-plugin-fresnel"
 
 const Header = () => {
@@ -31,10 +31,10 @@ const Header = () => {
       </div>
       <div className={navContainer}>
         <Media lessThan="lg">
-          <MobileNav />
+          <NavMobile />
         </Media>
         <Media greaterThanOrEqual="lg">
-          <DesktopNav />
+          <NavDesktop />
         </Media>
       </div>
     </header>
