@@ -15,7 +15,7 @@
 
 .nav-link {
   font-family: "Roboto";
-  color: var(--light-purple);
+  color: var(--bright-pink);
   font-weight: 500;
   text-decoration: none;
 }
@@ -25,7 +25,6 @@
   flex-direction: row;
   align-self: flex-end;
   justify-content: space-evenly;
-  width: 15%;
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
@@ -33,19 +32,8 @@
 .language-link {
   color: var(--light-purple);
   font-weight: 400;
+  padding: 0.8rem;
   font-family: "roboto";
-}
-
-.booking-button {
-  color: white;
-  background-color: var(--dark-purple);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-family: "roboto";
-  font-weight: 700;
-  border-radius: 3px;
-  display: inline-block;
-  filter: drop-shadow(0px 4px 4px rgb(0, 0, 0, 0.25));
 }
 
 .booking-button:hover {

@@ -20,8 +20,29 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .nav-container {
+    width: 90%;
+  }
+
   .company-container {
     margin: 0;
     margin-left: 5%;
+  }
+
+  .company-name {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .company-logo {
+    width: 50px;
   }
 }

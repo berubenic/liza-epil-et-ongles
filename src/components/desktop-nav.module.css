@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10%;
+  margin-right: 5%;
+}
+
+.navLinkList {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 50%;
+}
+
+.nav-link {
+  font-family: "Roboto";
+  color: var(--bright-pink);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.language-link {
+  color: var(--light-purple);
+  font-weight: 400;
+  font-family: "roboto";
+  margin-bottom: 1rem;
+}

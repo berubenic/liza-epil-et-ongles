@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
-import * as style from "./mobile-nav.module.css"
+import { bookingButton } from "./booking-button.module.css"
 
 const BookingButton = () => {
   const { t } = useTranslation("nav")
@@ -9,7 +9,7 @@ const BookingButton = () => {
       href="https://www.facebook.com/liza.epil.et.ongles/"
       target="_blank"
       rel="noreferrer"
-      className={style.bookingButton}
+      className={bookingButton}
     >
       {t("book")}
     </a>
