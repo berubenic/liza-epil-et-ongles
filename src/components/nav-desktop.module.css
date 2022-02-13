@@ -1,12 +1,12 @@
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 10%;
   margin-right: 5%;
 }
 
-.navLinkList {
+.nav-link-list {
   display: flex;
   flex-direction: row;
   text-align: center;

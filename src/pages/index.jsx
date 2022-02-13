@@ -15,10 +15,11 @@ import ConstructionBanner from "../components/construction-banner"
 
 const IndexPage = ({ data }) => {
   const { t } = useTranslation("index")
+  const language = data.locales.edges[0].node.language
 
   return (
     <Layout>
-      <Seo title={t("title")} />
+      <Seo title={t("SEOtitle")} language={language} />
       <div className={introMobileContainer}>
         <h1>{t("greeting")}</h1>
         <p>{t("description")}</p>

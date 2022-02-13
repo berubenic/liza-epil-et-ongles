@@ -12,24 +12,26 @@ import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
-const SEO = ({ title, description, image, article }) => {
+const SEO = ({ title, description, image, article, language }) => {
   const { t } = useTranslation("seo")
 
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
-  const { defaultTitle, titleTemplate, siteUrl } = site.siteMetadata
+  const { defaultTitle, siteUrl, defaultImage } = site.siteMetadata
 
   const defaultDescription = t("defaultDescription")
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
+    image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   }
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet title={seo.title}>
+      <html lang={language} />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -38,6 +40,7 @@ const SEO = ({ title, description, image, article }) => {
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
+      {seo.image && <meta property="og:image" content={seo.image} />}
     </Helmet>
   )
 }
@@ -63,7 +66,7 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
-        titleTemplate
+        defaultImage: image
         siteUrl: url
       }
     }

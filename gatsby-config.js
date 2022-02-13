@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Liza Épil et Ongles`,
-    titleTemplate: "%s - Service de soins d'esthétique",
-    description: `Centre de soins d'esthétique. Manicure, pédicure et épilation à Lavaltrie, Québec.`,
     author: `Nicholas Bérubé`,
     url: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    image: "logo.svg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -46,7 +45,7 @@ module.exports = {
         languages: [`fr`, `en`],
         defaultLanguage: `fr`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://liza-epil-et-ongles.com/`,
+        siteUrl: `https://epil-et-ongles.com/`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
