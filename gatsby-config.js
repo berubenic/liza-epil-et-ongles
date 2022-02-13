@@ -3,7 +3,7 @@ module.exports = {
     title: `Liza Épil et Ongles`,
     author: `Nicholas Bérubé`,
     url: `lizaepiletonglesmain.gatsbyjs.io`,
-    image: "/logo.svg",
+    image: "/logo.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
