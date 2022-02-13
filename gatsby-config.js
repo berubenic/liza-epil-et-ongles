@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Liza Épil et Ongles`,
     author: `Nicholas Bérubé`,
-    url: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
-    image: "logo.svg",
+    url: `lizaepiletonglesmain.gatsbyjs.io`,
+    image: "/logo.svg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,7 +45,7 @@ module.exports = {
         languages: [`fr`, `en`],
         defaultLanguage: `fr`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://epil-et-ongles.com/`,
+        siteUrl: `lizaepiletonglesmain.gatsbyjs.io`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
