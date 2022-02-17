@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Liza Épil et Ongles`,
     author: `Nicholas Bérubé`,
-    url: `lizaepiletonglesmain.gatsbyjs.io`,
+    url: `liepiletongles.com`,
     image: "/logo.png",
   },
   plugins: [
@@ -45,7 +45,7 @@ module.exports = {
         languages: [`fr`, `en`],
         defaultLanguage: `fr`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `lizaepiletonglesmain.gatsbyjs.io`,
+        siteUrl: `https:liepiletongles.com`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {

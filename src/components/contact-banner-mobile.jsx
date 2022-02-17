@@ -51,7 +51,7 @@ const ContactBannerMobile = () => {
             width={logoWidth}
           />
         </a>
-        <a href="mailto:bernierliza@gmail.com">
+        <a href="mailto:liepileetongles@gmail.com">
           <StaticImage
             src="../images/icons8-email-64.png"
             alt="Email logo"
