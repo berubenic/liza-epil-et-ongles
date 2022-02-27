@@ -43,6 +43,7 @@
   }
 
   .company-logo {
-    width: 140px;
+    width: 80px;
+    margin: 0 auto;
   }
 }
