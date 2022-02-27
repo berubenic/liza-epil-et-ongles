@@ -11,11 +11,11 @@
   text-decoration: none;
   font-family: "satisfy";
   color: black;
-  font-size: 2rem;
+  font-size: 1.875rem;
 }
 
 .company-logo {
-  width: 140px;
+  width: 80px;
   margin: 0.65rem;
 }
 
@@ -38,11 +38,11 @@
   }
 
   .company-name {
-    font-size: 1rem;
+    font-size: 2rem;
     white-space: nowrap;
   }
 
   .company-logo {
-    width: 50px;
+    width: 140px;
   }
 }
