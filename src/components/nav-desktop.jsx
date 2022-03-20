@@ -5,6 +5,7 @@ import {
   languageLink,
   navLinkList,
   navLink,
+  active
 } from "./nav-desktop.module.css"
 import BookingButton from "./booking-button"
 
@@ -16,8 +17,13 @@ const NavDesktop = () => {
     <nav className={nav}>
       <ul className={navLinkList}>
         <li>
-          <Link to="/" className={navLink}>
+          <Link to="/" className={navLink} activeClassName={active}>
             {t("home")}
+          </Link>
+        </li>
+        <li>
+          <Link to="/price-list" className={navLink} activeClassName={active}>
+            {t("price-list")}
           </Link>
         </li>
       </ul>
