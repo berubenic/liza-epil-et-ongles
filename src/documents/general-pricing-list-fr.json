@@ -1,0 +1,106 @@
+{
+    "services" : [
+        {
+            "name" :"Épilation à la cire tiède (avec bandes)",
+            "subServices" : [
+                {
+                    "name" : "1/2 jambes ou cuisses",
+                    "price" : "22$" 
+                },
+                {
+                    "name" : "Jambes complètes",
+                    "price" : "35$" 
+                },
+                {
+                    "name" : "Bras",
+                    "price" : "25$" 
+                },
+                {
+                    "name" : "Torse, dos ou autres",
+                    "price" : "Prix variés" 
+                }
+            ]
+        },
+        {
+            "name" : "Épilation à la cire chaude (sans bandes)",
+            "subServices" : [
+                {
+                    "name" : "Lèvre supérieure",
+                    "price" : "8$" 
+                },
+                {
+                    "name" : "Sourcils",
+                    "price" : "15$" 
+                },
+                {
+                    "name" : "Aisselles",
+                    "price" : "18$" 
+                },
+                {
+                    "name" : "Bikini régulier",
+                    "price" : "15$" 
+                },
+                {
+                    "name" : "Bikini échancré",
+                    "price" : "20$" 
+                },
+                {
+                    "name" : "Bikini intégral",
+                    "price" : "40$" 
+                }
+            ]
+        },
+        {
+            "name" : "Épilation à la pince",
+            "subServices" : [
+                {
+                    "name" : "Sourcils (nettoyage)",
+                    "price" : "8$" 
+                },
+                {
+                    "name" : "Autre régions sur demande",
+                    "price" : "Prix variés" 
+                }               
+            ]
+        },
+        {
+            "name" : "Ongles résine et poudre",
+            "subServices" : [
+                {
+                    "name" : "Recouvrement",
+                    "price" : "40$" 
+                },
+                {
+                    "name" : "Pose avec prothèse",
+                    "price" : "50$" 
+                }
+            ]
+        },
+        {
+            "name" : "Manucures",
+            "subServices" : [
+                {
+                    "name" : "Soins des mains (exfoliant, massage, ongles et vernis gel)",
+                    "price" : "40$" 
+                },
+                {
+                    "name" : "Beauté des mains (ongles et vernis gel)",
+                    "price" : "25$" 
+                }
+            ]
+        },
+        {
+            "name" : "Pédicures",
+            "subServices": [
+                {
+                    "name" : "Soins des pieds (trempage, exfoliant, callosités, massage et vernis gel)",
+                    "price" : "60$" 
+                },
+                {
+                    "name" : "Beauté des pieds (ongles et vernis gel)",
+                    "price" : "30$" 
+                }
+            ]
+        }
+    ]
+}

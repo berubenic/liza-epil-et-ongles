@@ -1,4 +1,4 @@
-.intro-mobile-container {
+.intro-container {
   text-align: center;
   font-family: "Montserrat";
   font-size: 1.625rem;
@@ -13,9 +13,8 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .intro-mobile-container {
+  .intro-container {
     text-align: left;
-    width: 100%;
     margin-left: 6%;
     font-size: 2.5rem;
     line-height: 175%;
