@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation("footer")
 
   return (
-    <footer className={footer}>
+    <footer className={footer} >
       © {new Date().getFullYear()}, {t("footer")}
       {` `}
       <a href="https://www.gatsbyjs.com" className={link}>

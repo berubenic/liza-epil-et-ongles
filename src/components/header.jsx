@@ -18,7 +18,7 @@ const Header = () => {
     <header className={header}>
       <div className={companyContainer}>
         <StaticImage
-          src="../images/logo.svg"
+          src="../images/logo.webp"
           alt=""
           width={80}
           className={companyLogo}

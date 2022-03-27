@@ -3,7 +3,7 @@ module.exports = {
     title: `Liza Épil et Ongles`,
     author: `Nicholas Bérubé`,
     url: `liepiletongles.com`,
-    image: "/logo.png",
+    image: "/logo.webp",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,7 +35,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+        icon: `src/images/logo.webp`, // This path is relative to the root of the site.
       },
     },
     {

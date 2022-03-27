@@ -1,0 +1,36 @@
+.price-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+.serviceName {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.subServiceName {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.subServicePrice {
+  font-style: italic;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.subServiceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1024px) {
+  .price-item-container {
+    gap: 10px;
+  }
+}

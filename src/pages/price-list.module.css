@@ -1,0 +1,49 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 1.625rem;
+  text-align: center;
+  margin-top: 3rem;
+  line-height: 2.5rem;
+  margin: 1rem auto;
+  width: 92%;
+}
+
+.page-title {
+  font-weight: 700;
+}
+
+.page-description {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-style: italic;
+}
+
+.price-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 2rem auto;
+  width: 92%;
+  margin-bottom: 5rem;
+}
+
+.price-list-item-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-header {
+    margin-top: 3rem;
+  }
+
+  .price-list-container {
+    width: 20%;
+    gap: 40px;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+  }
+}

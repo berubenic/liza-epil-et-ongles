@@ -2,7 +2,7 @@ import * as React from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import { Media } from "gatsby-plugin-fresnel"
 import {
-  introMobileContainer,
+  introContainer,
   serviceBannerContainer,
 } from "./index.module.css"
 import Layout from "../components/layout"
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title={t("SEOtitle")} language={language} />
-      <div className={introMobileContainer}>
+      <div className={introContainer}>
         <h1>{t("greeting")}</h1>
         <p>{t("description")}</p>
       </div>
@@ -44,9 +44,6 @@ const IndexPage = ({ data }) => {
       <Media greaterThanOrEqual="lg">
         <ContactBannerDesktop></ContactBannerDesktop>
       </Media>
-      <div>
-        <ConstructionBanner></ConstructionBanner>
-      </div>
     </Layout>
   )
 }
@@ -63,7 +60,7 @@ export const query = graphql`
       }
     }
     nailsServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "nails-service-banner" }
     ) {
       childImageSharp {
@@ -71,7 +68,7 @@ export const query = graphql`
       }
     }
     waxServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "wax-service-banner" }
     ) {
       childImageSharp {
@@ -79,7 +76,7 @@ export const query = graphql`
       }
     }
     pedicureServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "pedicure-service-banner" }
     ) {
       childImageSharp {
@@ -87,7 +84,7 @@ export const query = graphql`
       }
     }
     manicureServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "manicure-service-banner" }
     ) {
       childImageSharp {

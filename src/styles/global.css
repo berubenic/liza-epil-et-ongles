@@ -2,6 +2,16 @@
   --dark-purple: #9034c2;
   --light-purple: #ca35b1;
   --bright-pink: #d514b4;
+  --dark-pink: #910f7b;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
 }
 
 /* Position and sizing of burger button */
