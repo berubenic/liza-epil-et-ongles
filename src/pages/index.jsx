@@ -11,7 +11,6 @@ import ServiceBanner from "../components/service-banner"
 import ContactBannerMobile from "../components/contact-banner-mobile"
 import ContactBannerDesktop from "../components/contact-banner-desktop"
 import { graphql } from "gatsby"
-import ConstructionBanner from "../components/construction-banner"
 
 const IndexPage = ({ data }) => {
   const { t } = useTranslation("index")
