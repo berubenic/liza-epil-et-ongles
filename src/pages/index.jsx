@@ -60,7 +60,7 @@ export const query = graphql`
       }
     }
     nailsServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "nails-service-banner" }
     ) {
       childImageSharp {
@@ -68,7 +68,7 @@ export const query = graphql`
       }
     }
     waxServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "wax-service-banner" }
     ) {
       childImageSharp {
@@ -76,7 +76,7 @@ export const query = graphql`
       }
     }
     pedicureServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "pedicure-service-banner" }
     ) {
       childImageSharp {
@@ -84,7 +84,7 @@ export const query = graphql`
       }
     }
     manicureServiceImage: file(
-      extension: { eq: "jpg" }
+      extension: { eq: "webp" }
       name: { eq: "manicure-service-banner" }
     ) {
       childImageSharp {

@@ -16,7 +16,7 @@ const ContactBannerDesktop = () => {
   const logoWidth = 60
   return (
     <div className={contactBannerContainer}>
-      <StaticImage src="../images/liza-profile.jpg" className={profileImage} />
+      <StaticImage src="../images/liza-profile.webp" className={profileImage} />
       <div>
         <div className={descriptionContainer}>
           <h1 className={contactName}>Liza Bernier</h1>
@@ -32,8 +32,15 @@ const ContactBannerDesktop = () => {
             rel="noreferrer"
           >
             <StaticImage
-              src="../images/f_logo_RGB-Blue_100.png"
+              src="../images/f_logo_RGB-Blue_100.webp"
               alt="Facebook brand logo"
+              width={logoWidth}
+            />
+          </a>
+          <a href="mailto:liepiletongles@gmail.com">
+            <StaticImage
+              src="../images/icons8-email-64.webp"
+              alt="Email logo"
               width={logoWidth}
             />
           </a>
@@ -43,18 +50,12 @@ const ContactBannerDesktop = () => {
             rel="noreferrer"
           >
             <StaticImage
-              src="../images/Instagram_Glyph_Gradient_RGB.png"
+              src="../images/Instagram_Glyph_Gradient_RGB.webp"
               alt="Instagram brand logo"
               width={logoWidth}
             />
           </a>
-          <a href="mailto:liepiletongles@gmail.com">
-            <StaticImage
-              src="../images/icons8-email-64.png"
-              alt="Email logo"
-              width={logoWidth}
-            />
-          </a>
+          
         </div>
         <div>
           <BookingButton></BookingButton>

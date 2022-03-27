@@ -23,7 +23,7 @@ const ContactBannerMobile = () => {
         <p className={contactTitle}>{t("hair removal specialist")}</p>
       </div>
       <StaticImage
-        src="../images/liza-profile.jpg"
+        src="../images/liza-profile.webp"
         className={profileImage}
         width={120}
       />
@@ -35,8 +35,15 @@ const ContactBannerMobile = () => {
           rel="noreferrer"
         >
           <StaticImage
-            src="../images/f_logo_RGB-Blue_100.png"
+            src="../images/f_logo_RGB-Blue_100.webp"
             alt="Facebook brand logo"
+            width={logoWidth}
+          />
+        </a>
+        <a href="mailto:liepileetongles@gmail.com">
+          <StaticImage
+            src="../images/icons8-email-64.webp"
+            alt="Email logo"
             width={logoWidth}
           />
         </a>
@@ -46,15 +53,8 @@ const ContactBannerMobile = () => {
           rel="noreferrer"
         >
           <StaticImage
-            src="../images/Instagram_Glyph_Gradient_RGB.png"
+            src="../images/Instagram_Glyph_Gradient_RGB.webp"
             alt="Instagram brand logo"
-            width={logoWidth}
-          />
-        </a>
-        <a href="mailto:liepileetongles@gmail.com">
-          <StaticImage
-            src="../images/icons8-email-64.png"
-            alt="Email logo"
             width={logoWidth}
           />
         </a>
