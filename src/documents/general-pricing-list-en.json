@@ -1,0 +1,106 @@
+{
+    "services" : [
+        {
+            "name" :"Warm Wax (with strips)",
+            "subServices" : [
+                {
+                    "name" : "1/2 Legs or Thighs",
+                    "price" : "22$" 
+                },
+                {
+                    "name" : "Entire Legs",
+                    "price" : "35$" 
+                },
+                {
+                    "name" : "Arms",
+                    "price" : "25$" 
+                },
+                {
+                    "name" : "Chest, Back or Other",
+                    "price" : "Price varies" 
+                }
+            ]
+        },
+        {
+            "name" : "Hot Wax (without strips)",
+            "subServices" : [
+                {
+                    "name" : "Upper Lip",
+                    "price" : "8$" 
+                },
+                {
+                    "name" : "Eyebrows",
+                    "price" : "15$" 
+                },
+                {
+                    "name" : "Armpits",
+                    "price" : "18$" 
+                },
+                {
+                    "name" : "Regular Bikini",
+                    "price" : "15$" 
+                },
+                {
+                    "name" : "High Cut Bikini",
+                    "price" : "20$" 
+                },
+                {
+                    "name" : "Full Bikini",
+                    "price" : "40$" 
+                }
+            ]
+        },
+        {
+            "name" : "Tweezers Hair Removal",
+            "subServices" : [
+                {
+                    "name" : "Eyebrows (cleaning)",
+                    "price" : "8$" 
+                },
+                {
+                    "name" : "Other regions on demand",
+                    "price" : "Price varies" 
+                }               
+            ]
+        },
+        {
+            "name" : "Dip Powder Nails",
+            "subServices" : [
+                {
+                    "name" : "Natural Nail Covering",
+                    "price" : "40$" 
+                },
+                {
+                    "name" : "Full Set with Extensions",
+                    "price" : "50$" 
+                }
+            ]
+        },
+        {
+            "name" : "Manicures",
+            "subServices" : [
+                {
+                    "name" : "Full Hand Care (exfoliation, massage, nail prep and gel polish)",
+                    "price" : "40$" 
+                },
+                {
+                    "name" : "Quick Hand Care (nail prep and gel polish)",
+                    "price" : "25$" 
+                }
+            ]
+        },
+        {
+            "name" : "Pedicures",
+            "subServices": [
+                {
+                    "name" : "Full Feet Care (soaking, exfoliation, calluses thinning, massage, nail prep and gel polish)",
+                    "price" : "60$" 
+                },
+                {
+                    "name" : "Quick Feet Care (nail prep and gel polish)",
+                    "price" : "30$" 
+                }
+            ]
+        }
+    ]
+}

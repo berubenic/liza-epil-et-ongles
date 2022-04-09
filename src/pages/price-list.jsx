@@ -12,12 +12,12 @@ import {
   priceListItemContainer
 } from "./price-list.module.css"
 
-const priceListData = require("../documents/general-pricing-list-fr.json")
 
-const PriceListPage = ({ data }) => {
+
+const PriceListPage = ({data}) => {
   const { t } = useTranslation("price-list")
   const language = data.locales.edges[0].node.language
-  const services = []
+  const priceListData = (language === 'fr') ? require("../documents/general-pricing-list-fr.json") : require("../documents/general-pricing-list-en.json")
 
     return (
         <Layout>
