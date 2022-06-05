@@ -6,7 +6,6 @@ import {
     subServiceName,
     subServicePrice
 } from "./price-item.module.css"
-import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const PriceItem = ({name, subServices}) => {
     return (

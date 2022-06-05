@@ -12,6 +12,12 @@
   margin: 2rem auto;
 }
 
+.map-container {
+  width: 92%;
+  height: 100px;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 1024px) {
   .intro-container {
     text-align: left;
@@ -24,5 +30,9 @@
     display: flex;
     width: 92%;
     margin: 5rem auto;
+  }
+
+  .map-container {
+    width: 50%;
   }
 }

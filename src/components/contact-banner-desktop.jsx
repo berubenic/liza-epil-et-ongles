@@ -16,7 +16,7 @@ const ContactBannerDesktop = () => {
   const logoWidth = 60
   return (
     <div className={contactBannerContainer}>
-      <StaticImage src="../images/liza-profile.webp" className={profileImage} />
+      <StaticImage src="../images/liza-profile.webp" className={profileImage} alt="" />
       <div>
         <div className={descriptionContainer}>
           <h1 className={contactName}>Liza Bernier</h1>
