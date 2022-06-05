@@ -17,7 +17,6 @@ import { graphql } from "gatsby"
 const IndexPage = ({ data }) => {
   const { t } = useTranslation("index")
   const language = data.locales.edges[0].node.language
-  const isBrowser = () => typeof window !== "undefined"
 
   return (
     <Layout>
@@ -47,7 +46,7 @@ const IndexPage = ({ data }) => {
         <ContactBannerDesktop></ContactBannerDesktop>
       </Media>
         <div className={mapContainer}>
-          {typeof isBrowser &&
+          {
             <MyMap
               position={[45.88645678865315, -73.280724539847]}
               zoom={14}
